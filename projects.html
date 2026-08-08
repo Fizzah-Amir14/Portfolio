@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Fizzah Amir</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav__name" href="index.html">Fizzah Amir</a>
+    <ul class="nav__links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html" aria-current="page">projects</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero wrap" style="padding-bottom:24px; position:relative;">
+  <img class="motif" src="assets/svg/motif-1.svg" alt="">
+  <p class="eyebrow">selected work</p>
+  <h1 style="font-size:clamp(2rem,5vw,2.8rem);">Projects</h1>
+  <p class="lede">Real screenshots below — swap each placeholder with a cropped, clean capture of the actual dashboard, notebook output, or app.</p>
+</header>
+
+<section class="wrap" style="padding-top:0;">
+
+  <article class="project" id="flyrank">
+    <p class="eyebrow">flyrank internship · lane 4</p>
+    <h2>Search Ranking Decay Classifier</h2>
+    <dl class="kv">
+      <dt>data</dt><dd>~79M rows, Google Search Console (via DuckDB pipeline)</dd>
+      <dt>model</dt><dd>Logistic regression — 82.1% accuracy, 97% recall on decay class</dd>
+      <dt>stack</dt><dd>Python · DuckDB · scikit-learn · Streamlit · Plotly</dd>
+    </dl>
+    <div class="project__img" style="padding:0;"><img src="assets/img/flyrank-dashboard.png" alt="Content Ranking Decay Predictor Streamlit dashboard" style="width:100%; height:100%; object-fit:cover; border-radius:4px;"></div>
+    <p>Built an end-to-end pipeline to flag pages losing organic CTR and engagement, from raw GSC exports through a DuckDB-based data contract to a deployed classifier and dashboard. Documented the known limitation on Class 0 recall as part of the capstone research paper.</p>
+    <a class="btn" href="https://github.com/Fizzah-Amir14" target="_blank" rel="noopener">view on GitHub →</a>
+  </article>
+
+  <article class="project" id="ai-jobs">
+    <p class="eyebrow">independent project</p>
+    <h2>AI Impact on Jobs — Analytics Dashboard</h2>
+    <dl class="kv">
+      <dt>data</dt><dd>5,000-row Kaggle dataset</dd>
+      <dt>stack</dt><dd>Python · Power BI</dd>
+    </dl>
+    <div class="project__img" style="padding:0;"><img src="assets/img/ai-jobs-dashboard.png" alt="AI Impact on Jobs Power BI dashboard overview" style="width:100%; height:100%; object-fit:cover; border-radius:4px;"></div>
+    <p>An exploratory analytics project examining how AI adoption is reshaping roles across industries, published as an interactive Power BI dashboard.</p>
+
+    <div class="grid" style="grid-template-columns: repeat(2, 1fr); margin: 20px 0;">
+      <div>
+        <img src="assets/img/ai-jobs-postings-growth.png" alt="AI job postings growth over years, 2010 to 2025" style="border:1px solid var(--line); border-radius:4px;">
+        <p class="card__meta" style="margin-top:8px;">job postings growth, 2010–2025</p>
+      </div>
+      <div>
+        <img src="assets/img/ai-jobs-risk-histogram.png" alt="Distribution of automation risk scores across job postings" style="border:1px solid var(--line); border-radius:4px;">
+        <p class="card__meta" style="margin-top:8px;">automation risk score distribution</p>
+      </div>
+    </div>
+
+    <a class="btn" href="https://github.com/Fizzah-Amir14" target="_blank" rel="noopener">view on GitHub →</a>
+  </article>
+
+  <article class="project" id="superstore">
+    <p class="eyebrow">independent project</p>
+    <h2>Superstore Sales Analytics</h2>
+    <dl class="kv">
+      <dt>stack</dt><dd>Python · Pandas · Matplotlib</dd>
+    </dl>
+    <div class="project__img" style="padding:0;"><img src="assets/img/superstore-top-sellers.png" alt="Top 10 sellers by revenue and review scores" style="width:100%; height:100%; object-fit:cover; border-radius:4px;"></div>
+    <p>Sales and profitability analysis built through the full pandas workflow — cleaning, filtering, group-bys and pivot tables — on the Sample Superstore dataset.</p>
+
+    <div style="margin: 20px 0;">
+      <img src="assets/img/superstore-delivery-time.png" alt="Average delivery time by customer state" style="border:1px solid var(--line); border-radius:4px;">
+      <p class="card__meta" style="margin-top:8px;">average delivery time by state</p>
+    </div>
+
+    <a class="btn" href="https://github.com/Fizzah-Amir14" target="_blank" rel="noopener">view on GitHub →</a>
+  </article>
+
+</section>
+
+<footer class="wrap">
+  <span>© 2026 Fizzah Amir</span>
+  <span><a href="https://github.com/Fizzah-Amir14" target="_blank" rel="noopener">github.com/Fizzah-Amir14</a></span>
+</footer>
+
+</body>
+</html>
